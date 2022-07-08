@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <style>
+        p {
+            font-size: 20px;
+        }
+
+        input {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .fildset {
+            margin: 20px 0;
+        }
+
+        .checkbox {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: blueviolet;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Sing Up Form</legend>
+            <label for="#">Write your Name:</label>
+            <p>Name: <input type="text" name="name" placeholder="write your name"></p>
+            <label for="#">Write your Email:</label>
+            <p><input type="email" name="email" placeholder="write your email"></p>
+            <label for="#">Type your password:</label>
+            <p><input type="password" name="password" placeholder="write your email"></p>
+            <label for="#">Write your birthday:</label>
+            <p><input type="date" name="birthday" placeholder="write your email"></p>
+            <fieldset class="fildset">
+                <legend>Select Your Gender</legend>
+                <p><label for="male"><input type="radio" name="person" id="male">Male</label></p>
+                <p><label for="female"><input type="radio" name="person" id="female">Female</label></p>
+                <p><label for="other"><input type="radio" name="person" id="other">Others</label></p>
+            </fieldset>
+            <input type="checkbox" class="checkbox"> I agree all terms and condition <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
